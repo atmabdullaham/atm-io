@@ -5,10 +5,10 @@ import logo from "../assets/logo.png";
 const Navbar = () => {
   return (
     <div className="bg-white shadow-sm">
-      <div className="navbar  w-11/12  mx-auto">
+      <div className="navbar w-11/12 mx-auto">
         <div className="navbar-start">
           <div className="dropdown">
-            <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+            <div tabIndex={0} role="button" className="p-2 pl-0 lg:hidden">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-5 w-5"
@@ -29,23 +29,42 @@ const Navbar = () => {
               tabIndex={0}
               className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
             >
-              <li>
-                <a>Item 1</a>
-              </li>
-              <li>
-                <a>Parent</a>
-                <ul className="p-2">
-                  <li>
-                    <a>Submenu 1</a>
-                  </li>
-                  <li>
-                    <a>Submenu 2</a>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <a>Item 3</a>
-              </li>
+              <NavLink
+                to="/"
+                className={({ isActive, isPending }) =>
+                  isPending
+                    ? "text-base font-semibold"
+                    : isActive
+                    ? "text-base font-semibold bg-gradient-to-r from-violet-700 to-purple-500 text-transparent bg-clip-text border-b-2 border-violet-700"
+                    : "text-base font-semibold"
+                }
+              >
+                Home
+              </NavLink>
+              <NavLink
+                to="/all-apps"
+                className={({ isActive, isPending }) =>
+                  isPending
+                    ? "text-base font-semibold"
+                    : isActive
+                    ? "text-base font-semibold bg-gradient-to-r from-violet-700 to-purple-500 text-transparent bg-clip-text border-b-2 border-violet-700"
+                    : "text-base font-semibold"
+                }
+              >
+                Apps
+              </NavLink>
+              <NavLink
+                to="/installation"
+                className={({ isActive, isPending }) =>
+                  isPending
+                    ? "text-base font-semibold"
+                    : isActive
+                    ? "text-base font-semibold bg-gradient-to-r from-violet-700 to-purple-500 text-transparent bg-clip-text border-b-2 border-violet-700"
+                    : "text-base font-semibold"
+                }
+              >
+                Installation
+              </NavLink>
             </ul>
           </div>
           <Link
@@ -59,40 +78,49 @@ const Navbar = () => {
           <ul className="px-1 space-x-8">
             <NavLink
               to="/"
-              className={({ isActive }) =>
-                isActive
-                  ? "bg-gradient-to-r from-violet-700 to-purple-500 text-transparent bg-clip-text border-b-2 border-violet-700"
-                  : ""
+              className={({ isActive, isPending }) =>
+                isPending
+                  ? "text-base font-semibold"
+                  : isActive
+                  ? "text-base font-semibold bg-gradient-to-r from-violet-700 to-purple-500 text-transparent bg-clip-text border-b-2 border-violet-700"
+                  : "text-base font-semibold"
               }
             >
-              <a className="text-base font-semibold">Home</a>
+              Home
             </NavLink>
             <NavLink
               to="/all-apps"
-              className={({ isActive }) =>
-                isActive
-                  ? "bg-gradient-to-r from-violet-700 to-purple-500 text-transparent bg-clip-text border-b-2 border-violet-700"
-                  : ""
+              className={({ isActive, isPending }) =>
+                isPending
+                  ? "text-base font-semibold"
+                  : isActive
+                  ? "text-base font-semibold bg-gradient-to-r from-violet-700 to-purple-500 text-transparent bg-clip-text border-b-2 border-violet-700"
+                  : "text-base font-semibold"
               }
             >
-              <a className="text-base font-semibold">Apps</a>
+              Apps
             </NavLink>
             <NavLink
               to="/installation"
-              className={({ isActive }) =>
-                isActive
-                  ? "bg-gradient-to-r from-violet-700 to-purple-500 text-transparent bg-clip-text border-b-2 border-violet-700"
-                  : ""
+              className={({ isActive, isPending }) =>
+                isPending
+                  ? "text-base font-semibold"
+                  : isActive
+                  ? "text-base font-semibold bg-gradient-to-r from-violet-700 to-purple-500 text-transparent bg-clip-text border-b-2 border-violet-700"
+                  : "text-base font-semibold"
               }
             >
-              <a className="text-base font-semibold">Installation</a>
+              Installation
             </NavLink>
           </ul>
         </div>
         <div className="navbar-end">
-          <a className="btn bg-gradient-to-r from-violet-700 to-purple-500 text-white text-base font-semibold border-0">
+          <Link
+            to="https://github.com/atmabdullaham"
+            className="btn bg-gradient-to-r from-violet-700 to-purple-500 text-white text-base font-semibold border-0"
+          >
             <FaGithub /> Contribute
-          </a>
+          </Link>
         </div>
       </div>
     </div>
