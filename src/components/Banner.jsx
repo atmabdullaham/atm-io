@@ -4,7 +4,7 @@ import hero from "../assets/hero.png";
 
 const Banner = () => {
   return (
-    <div className="flex flex-col items-center justify-center gap-8 w-11/12 mx-auto py-10">
+    <div className="flex flex-col items-center justify-center gap-8 w-11/12 mx-auto pt-10">
       <div>
         <h1 className="text-7xl font-bold text-center">
           We build <br />{" "}
