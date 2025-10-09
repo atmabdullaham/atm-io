@@ -1,0 +1,362 @@
+[
+  {
+    "image": "https://i.ibb.co.com/d4ttmnft/1.jpg",
+    "title": "FitTrack Pro",
+    "companyName": "HealthTech Studios",
+    "id": 1,
+    "description": "Your ultimate fitness companion with personalized workout plans, nutrition tracking, and AI-powered coaching. Track your progress with detailed analytics and join a community of millions working towards their fitness goals.",
+    "size": 45.2,
+    "reviews": 128450,
+    "ratingAvg": 4.6,
+    "downloads": 5200000,
+    "ratings": [
+      { "name": "1 star", "count": 3850 },
+      { "name": "2 star", "count": 5120 },
+      { "name": "3 star", "count": 12890 },
+      { "name": "4 star", "count": 38460 },
+      { "name": "5 star", "count": 68130 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/DFYghDL/2.jpg",
+    "title": "VoiceChat Messenger",
+    "companyName": "CommTech Industries",
+    "id": 2,
+    "description": "Crystal clear voice and video calls with instant messaging. Share files, create group chats, and communicate seamlessly with friends and colleagues worldwide. End-to-end encryption ensures your privacy.",
+    "size": 58.4,
+    "reviews": 276340,
+    "ratingAvg": 4.3,
+    "downloads": 12500000,
+    "ratings": [
+      { "name": "1 star", "count": 8290 },
+      { "name": "2 star", "count": 11050 },
+      { "name": "3 star", "count": 33160 },
+      { "name": "4 star", "count": 110540 },
+      { "name": "5 star", "count": 113300 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/0y8SBhn5/3.jpg",
+    "title": "Foodie Finds",
+    "companyName": "Culinary Connect Inc",
+    "id": 3,
+    "description": "Discover the best restaurants, cafes, and hidden gems in your city. Read authentic reviews, browse menus, and make reservations instantly. Get personalized recommendations based on your taste preferences.",
+    "size": 67.5,
+    "reviews": 245680,
+    "ratingAvg": 4.7,
+    "downloads": 8900000,
+    "ratings": [
+      { "name": "1 star", "count": 4910 },
+      { "name": "2 star", "count": 7370 },
+      { "name": "3 star", "count": 19650 },
+      { "name": "4 star", "count": 73770 },
+      { "name": "5 star", "count": 139980 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/DgmhSRgc/4.jpg",
+    "title": "LearnHub Academy",
+    "companyName": "EduTech Solutions",
+    "id": 4,
+    "description": "Access thousands of courses across technology, business, arts, and personal development. Learn at your own pace with video lessons, quizzes, and certificates recognized by industry leaders.",
+    "size": 89.3,
+    "reviews": 156780,
+    "ratingAvg": 4.8,
+    "downloads": 6700000,
+    "ratings": [
+      { "name": "1 star", "count": 1880 },
+      { "name": "2 star", "count": 3140 },
+      { "name": "3 star", "count": 9410 },
+      { "name": "4 star", "count": 47100 },
+      { "name": "5 star", "count": 95250 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/PZTNpGph/5.jpg",
+    "title": "BudgetWise",
+    "companyName": "FinanceFirst Corp",
+    "id": 5,
+    "description": "Take control of your finances with smart budgeting tools, expense tracking, and investment insights. Connect your bank accounts securely and get real-time updates on your financial health.",
+    "size": 41.7,
+    "reviews": 203450,
+    "ratingAvg": 4.5,
+    "downloads": 7500000,
+    "ratings": [
+      { "name": "1 star", "count": 6100 },
+      { "name": "2 star", "count": 8140 },
+      { "name": "3 star", "count": 20350 },
+      { "name": "4 star", "count": 81380 },
+      { "name": "5 star", "count": 87480 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/Mxb7hPvZ/6.jpg",
+    "title": "CodeCraft IDE",
+    "companyName": "DevTools Pro",
+    "id": 6,
+    "description": "Professional mobile IDE for developers on the go. Write, compile, and test code in 50+ programming languages. Features include syntax highlighting, code completion, and Git integration.",
+    "size": 125.4,
+    "reviews": 67890,
+    "ratingAvg": 4.3,
+    "downloads": 2300000,
+    "ratings": [
+      { "name": "1 star", "count": 3390 },
+      { "name": "2 star", "count": 4750 },
+      { "name": "3 star", "count": 13580 },
+      { "name": "4 star", "count": 27140 },
+      { "name": "5 star", "count": 19030 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/fG14Gs8B/7.jpg",
+    "title": "MusicFlow Stream",
+    "companyName": "AudioWave Media",
+    "id": 7,
+    "description": "Stream millions of songs, create custom playlists, and discover new artists. Enjoy high-quality audio, offline downloads, and personalized radio stations based on your listening habits.",
+    "size": 78.9,
+    "reviews": 892340,
+    "ratingAvg": 4.6,
+    "downloads": 25000000,
+    "ratings": [
+      { "name": "1 star", "count": 26770 },
+      { "name": "2 star", "count": 35690 },
+      { "name": "3 star", "count": 89230 },
+      { "name": "4 star", "count": 356940 },
+      { "name": "5 star", "count": 383710 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/ZRRqhJc9/8.jpg",
+    "title": "TravelMate Navigator",
+    "companyName": "Globe Explorers Ltd",
+    "id": 8,
+    "description": "Plan your perfect trip with flight bookings, hotel reservations, and curated travel guides. Get real-time navigation, local recommendations, and translate conversations in 100+ languages.",
+    "size": 95.6,
+    "reviews": 178920,
+    "ratingAvg": 4.4,
+    "downloads": 6200000,
+    "ratings": [
+      { "name": "1 star", "count": 5370 },
+      { "name": "2 star", "count": 7150 },
+      { "name": "3 star", "count": 21430 },
+      { "name": "4 star", "count": 71560 },
+      { "name": "5 star", "count": 73410 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/rGWqCwtx/9.jpg",
+    "title": "PhotoEdit Studio",
+    "companyName": "Creative Vision Apps",
+    "id": 9,
+    "description": "Professional photo editing tools in your pocket. Apply filters, adjust colors, remove backgrounds, and add stunning effects. Perfect for social media content creators and photography enthusiasts.",
+    "size": 112.3,
+    "reviews": 456780,
+    "ratingAvg": 4.7,
+    "downloads": 15000000,
+    "ratings": [
+      { "name": "1 star", "count": 9140 },
+      { "name": "2 star", "count": 13700 },
+      { "name": "3 star", "count": 36540 },
+      { "name": "4 star", "count": 137120 },
+      { "name": "5 star", "count": 260280 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/zHn7vtMd/10.jpg",
+    "title": "ShopSmart Deals",
+    "companyName": "RetailTech Group",
+    "id": 10,
+    "description": "Find the best deals and discounts from thousands of online stores. Compare prices, track price drops, and get alerts when your favorite items go on sale. Save money on every purchase.",
+    "size": 54.2,
+    "reviews": 312450,
+    "ratingAvg": 4.5,
+    "downloads": 11000000,
+    "ratings": [
+      { "name": "1 star", "count": 9370 },
+      { "name": "2 star", "count": 12500 },
+      { "name": "3 star", "count": 31250 },
+      { "name": "4 star", "count": 124980 },
+      { "name": "5 star", "count": 134350 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/4gW024Lv/11.jpg",
+    "title": "MindfulMoment Meditation",
+    "companyName": "Wellness Innovations",
+    "id": 11,
+    "description": "Reduce stress and improve sleep with guided meditations, breathing exercises, and mindfulness practices. Features sleep stories, ambient sounds, and personalized meditation programs.",
+    "size": 72.8,
+    "reviews": 234560,
+    "ratingAvg": 4.8,
+    "downloads": 9800000,
+    "ratings": [
+      { "name": "1 star", "count": 2810 },
+      { "name": "2 star", "count": 4690 },
+      { "name": "3 star", "count": 14070 },
+      { "name": "4 star", "count": 70370 },
+      { "name": "5 star", "count": 142620 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/PZnn68VJ/12.jpg",
+    "title": "GameHub Arcade",
+    "companyName": "Pixel Play Studios",
+    "id": 12,
+    "description": "Enjoy hundreds of casual games across puzzle, strategy, action, and adventure genres. Play offline, compete with friends, and climb global leaderboards. New games added weekly.",
+    "size": 186.5,
+    "reviews": 1245670,
+    "ratingAvg": 4.4,
+    "downloads": 42000000,
+    "ratings": [
+      { "name": "1 star", "count": 37370 },
+      { "name": "2 star", "count": 49850 },
+      { "name": "3 star", "count": 124570 },
+      { "name": "4 star", "count": 498270 },
+      { "name": "5 star", "count": 535610 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/jkS4g21V/13.jpg",
+    "title": "SecureVault Password Manager",
+    "companyName": "CyberGuard Security",
+    "id": 13,
+    "description": "Keep all your passwords safe with military-grade encryption. Auto-fill login credentials, generate strong passwords, and sync securely across all your devices. Includes dark web monitoring.",
+    "size": 38.4,
+    "reviews": 145230,
+    "ratingAvg": 4.6,
+    "downloads": 5800000,
+    "ratings": [
+      { "name": "1 star", "count": 2910 },
+      { "name": "2 star", "count": 4360 },
+      { "name": "3 star", "count": 14520 },
+      { "name": "4 star", "count": 58090 },
+      { "name": "5 star", "count": 65350 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/Z5WL6mw/14.jpg",
+    "title": "LanguageMaster Pro",
+    "companyName": "Global Learning Institute",
+    "id": 14,
+    "description": "Learn a new language with interactive lessons, real conversations, and gamified exercises. Master vocabulary, grammar, and pronunciation in 40+ languages with native speaker audio.",
+    "size": 103.7,
+    "reviews": 398450,
+    "ratingAvg": 4.7,
+    "downloads": 13500000,
+    "ratings": [
+      { "name": "1 star", "count": 7970 },
+      { "name": "2 star", "count": 11950 },
+      { "name": "3 star", "count": 31880 },
+      { "name": "4 star", "count": 159380 },
+      { "name": "5 star", "count": 187270 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/JW1xwSyZ/15.jpg",
+    "title": "PetCare Companion",
+    "companyName": "AnimalWelfare Apps",
+    "id": 15,
+    "description": "Everything you need to care for your furry friends. Track vet appointments, set feeding reminders, monitor health records, and connect with local pet services. Includes training tips and emergency contacts.",
+    "size": 61.9,
+    "reviews": 187690,
+    "ratingAvg": 4.8,
+    "downloads": 7100000,
+    "ratings": [
+      { "name": "1 star", "count": 2820 },
+      { "name": "2 star", "count": 3750 },
+      { "name": "3 star", "count": 11260 },
+      { "name": "4 star", "count": 56310 },
+      { "name": "5 star", "count": 113550 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/rGDMGrXv/16.jpg",
+    "title": "WeatherPro Forecast",
+    "companyName": "Climate Data Systems",
+    "id": 16,
+    "description": "Accurate weather forecasts with hour-by-hour updates, severe weather alerts, and interactive radar maps. Plan your week with 10-day forecasts and get personalized weather notifications.",
+    "size": 49.3,
+    "reviews": 567890,
+    "ratingAvg": 4.5,
+    "downloads": 18000000,
+    "ratings": [
+      { "name": "1 star", "count": 17040 },
+      { "name": "2 star", "count": 22720 },
+      { "name": "3 star", "count": 56790 },
+      { "name": "4 star", "count": 227160 },
+      { "name": "5 star", "count": 244180 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/k2KS7PLM/17.jpg",
+    "title": "HomeDesign 3D",
+    "companyName": "Interior Innovations Co",
+    "id": 17,
+    "description": "Design and visualize your dream home in 3D. Plan room layouts, experiment with furniture arrangements, and preview paint colors. Features AR view to see designs in your actual space.",
+    "size": 148.2,
+    "reviews": 92340,
+    "ratingAvg": 4.3,
+    "downloads": 3400000,
+    "ratings": [
+      { "name": "1 star", "count": 4620 },
+      { "name": "2 star", "count": 5540 },
+      { "name": "3 star", "count": 13850 },
+      { "name": "4 star", "count": 36940 },
+      { "name": "5 star", "count": 31390 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/Kpc1gqDH/18.jpg",
+    "title": "ReadMore eBook Library",
+    "companyName": "Digital Publishing Network",
+    "id": 18,
+    "description": "Access millions of eBooks, audiobooks, and magazines. Enjoy personalized recommendations, customizable reading settings, and sync your progress across devices. Offline reading available.",
+    "size": 67.1,
+    "reviews": 423560,
+    "ratingAvg": 4.6,
+    "downloads": 14000000,
+    "ratings": [
+      { "name": "1 star", "count": 8470 },
+      { "name": "2 star", "count": 12710 },
+      { "name": "3 star", "count": 42360 },
+      { "name": "4 star", "count": 169420 },
+      { "name": "5 star", "count": 190600 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/RpNLr8N4/19.jpg",
+    "title": "SocialConnect Hub",
+    "companyName": "Network Dynamics Inc",
+    "id": 19,
+    "description": "Stay connected with friends and family through messaging, video calls, and photo sharing. Create groups, share stories, and discover events happening around you. Privacy-focused with end-to-end encryption.",
+    "size": 82.6,
+    "reviews": 2156780,
+    "ratingAvg": 4.2,
+    "downloads": 58000000,
+    "ratings": [
+      { "name": "1 star", "count": 129410 },
+      { "name": "2 star", "count": 172540 },
+      { "name": "3 star", "count": 323020 },
+      { "name": "4 star", "count": 862710 },
+      { "name": "5 star", "count": 669100 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/byb4NYQ/20.jpg",
+    "title": "CarMaintenance Tracker",
+    "companyName": "AutoCare Solutions",
+    "id": 20,
+    "description": "Never miss a service appointment with comprehensive vehicle maintenance tracking. Log repairs, track expenses, set reminders for oil changes, and monitor fuel efficiency. Multi-vehicle support included.",
+    "size": 44.8,
+    "reviews": 134670,
+    "ratingAvg": 4.4,
+    "downloads": 4900000,
+    "ratings": [
+      { "name": "1 star", "count": 4040 },
+      { "name": "2 star", "count": 5390 },
+      { "name": "3 star", "count": 16160 },
+      { "name": "4 star", "count": 53870 },
+      { "name": "5 star", "count": 55210 }
+    ]
+  }
+]
