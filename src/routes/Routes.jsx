@@ -24,6 +24,7 @@ export const router = createBrowserRouter([
       },
       {
         path: "all-apps",
+        loader: async () => await fetch("./apps.json"),
         Component: AllApps,
       },
       {
