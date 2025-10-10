@@ -18,7 +18,8 @@ export const router = createBrowserRouter([
         Component: Home,
       },
       {
-        path: "details",
+        path: "details/:id",
+        loader: async () => await fetch("./apps.json"),
         Component: AppDetails,
       },
       {
