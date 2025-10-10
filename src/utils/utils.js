@@ -1,3 +1,4 @@
+
    const downloadsConverter = (downloads) => {
     let countK = 0;
     let countM = 0;
@@ -17,4 +18,34 @@
     }
   };
 
-  export { downloadsConverter };
+  const getStoreApps = ()=>{
+    const storedAppsStr = localStorage.getItem("installed");
+    if(storedAppsStr){
+      const  storedAppsData = JSON.parse(storedAppsStr);
+        return storedAppsData
+    }else{
+        return []
+    }
+
+  }
+  const addToStoreDB = (id)=>{
+    const previousApp = getStoreApps()
+    if(previousApp.includes(id)){
+        alert("This id already exists")
+    }else {
+        previousApp.push(id);
+        const strData = JSON.stringify(previousApp);
+        localStorage.setItem("installed", strData)
+    }
+  }
+
+  const removeFromStoreDB = (id)=>{
+    const previousApp = getStoreApps()
+    const newApps = previousApp.filter(item => parseInt(item) !== parseInt(id));
+    const strData = JSON.stringify(newApps);
+    localStorage.setItem("installed", strData)
+    console.log(strData);
+
+  }
+  export { addToStoreDB, downloadsConverter, getStoreApps, removeFromStoreDB };
+

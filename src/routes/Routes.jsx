@@ -19,16 +19,17 @@ export const router = createBrowserRouter([
       },
       {
         path: "details/:id",
-        loader: async () => await fetch("./apps.json"),
+        loader: async () => await fetch("/apps.json"),
         Component: AppDetails,
       },
       {
         path: "all-apps",
-        loader: async () => await fetch("./apps.json"),
+        loader: async () => await fetch("/apps.json"),
         Component: AllApps,
       },
       {
         path: "installation",
+        loader: async () => await fetch("/apps.json"),
         Component: Installation,
       },
     ],

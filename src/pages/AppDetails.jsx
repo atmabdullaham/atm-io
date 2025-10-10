@@ -4,7 +4,7 @@ import { MdOutlineStar } from "react-icons/md";
 import { useLoaderData, useParams } from "react-router";
 
 import RatingBarChart from "../components/RatingBarChart";
-import { downloadsConverter } from "../utils/utils";
+import { addToStoreDB, downloadsConverter } from "../utils/utils";
 
 const AppDetails = () => {
   const { id } = useParams();
@@ -28,6 +28,10 @@ const AppDetails = () => {
     0
   );
   const totalReviewsFinal = downloadsConverter(totalReviews);
+
+  const handleInstall = (id) => {
+    addToStoreDB(id);
+  };
 
   return (
     <div className="py-10 bg-gray-100">
@@ -69,7 +73,10 @@ const AppDetails = () => {
                 <h1 className="text-4xl font-bold">{totalReviewsFinal}</h1>
               </div>
             </div>
-            <button className="btn bg-emerald-400 text-white text-lg font-semibold py-3 px-5">
+            <button
+              onClick={() => handleInstall(id)}
+              className="btn bg-emerald-400 text-white text-lg font-semibold py-3 px-5"
+            >
               Install Now ({size})
             </button>
           </div>
