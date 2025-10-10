@@ -3,12 +3,15 @@ import { GoDownload } from "react-icons/go";
 import { MdOutlineStar } from "react-icons/md";
 import { useLoaderData, useParams } from "react-router";
 
+import { useEffect, useState } from "react";
+import { toast, ToastContainer } from "react-toastify";
 import RatingBarChart from "../components/RatingBarChart";
-import { addToStoreDB, downloadsConverter } from "../utils/utils";
+import { addToStoreDB, downloadsConverter, getStoreApps } from "../utils/utils";
 
 const AppDetails = () => {
   const { id } = useParams();
   const data = useLoaderData();
+  const [alreadInstalled, setAlreadyInstalled] = useState(false);
   const detailsToShow = data?.find((book) => book.id === parseInt(id));
   const {
     image,
@@ -27,17 +30,28 @@ const AppDetails = () => {
     (count, rating) => count + rating.count,
     0
   );
+  useEffect(() => {
+    const storedAppsData = getStoreApps();
+    const alreadyHave = storedAppsData.includes(id);
+    setAlreadyInstalled(alreadyHave);
+  }, [id]);
   const totalReviewsFinal = downloadsConverter(totalReviews);
 
-  const handleInstall = (id) => {
-    addToStoreDB(id);
+  const handleInstall = (appId) => {
+    addToStoreDB(appId);
+    setAlreadyInstalled(true);
+    toast.success("The app install successfully");
   };
-
+  console.log(alreadInstalled);
   return (
     <div className="py-10 bg-gray-100">
       <div className="w-11/12 mx-auto space-y-10">
-        <div className="flex justify-start items-center gap-10 ">
-          <img src={image} alt="" className="rounded-lg w-70 bg-white" />
+        <div className="flex flex-col md:flex-row justify-start items-center gap-10">
+          <img
+            src={image}
+            alt=""
+            className="rounded-lg w-80 md:w-70  bg-white"
+          />
 
           <div className="space-y-5  flex-1">
             <div className="space-y-2">
@@ -74,10 +88,11 @@ const AppDetails = () => {
               </div>
             </div>
             <button
+              disabled={alreadInstalled}
               onClick={() => handleInstall(id)}
-              className="btn bg-emerald-400 text-white text-lg font-semibold py-3 px-5"
+              className={`btn bg-emerald-400 text-white text-lg font-semibold py-3 px-5 disabled:bg-emerald-100 disabled:text-gray-500 `}
             >
-              Install Now ({size})
+              {!alreadInstalled ? `Install Now (${size})` : "Installed"}
             </button>
           </div>
         </div>
@@ -91,6 +106,7 @@ const AppDetails = () => {
           <p className="text-lg font-normal text-gray-600">{description}</p>
         </div>
       </div>
+      <ToastContainer />
     </div>
   );
 };

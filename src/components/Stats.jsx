@@ -6,17 +6,20 @@ const Stats = () => {
           Trusted by Millions, Built for You
         </h1>
         <div className="grid grid-cols-1 md:grid-cols-3 text-white gap-4">
-          <div className="flex flex-col text-center items-center border-2 py-8 rounded-2xl">
+          <div className="flex flex-col text-center items-center  py-8 rounded-2xl space-y-2">
             <h3>Total Downloads</h3>
             <h1 className="text-6xl font-extrabold">29.6M</h1>
+            <h3>21% more than last month</h3>
           </div>
-          <div className="flex flex-col text-center items-center border-2 py-8 rounded-2xl">
+          <div className="flex flex-col text-center items-center  py-8 rounded-2xl space-y-2">
             <h3>Total Reviews</h3>
             <h1 className="text-6xl font-extrabold">906K</h1>
+            <h3>46% more than last month</h3>
           </div>
-          <div className="flex flex-col text-center items-center border-2 py-8 rounded-2xl">
+          <div className="flex flex-col text-center items-center  py-8 rounded-2xl space-y-2">
             <h3>Active Apps</h3>
             <h1 className="text-6xl font-extrabold">132+</h1>
+            <h3>31 more will Launch</h3>
           </div>
         </div>
       </div>

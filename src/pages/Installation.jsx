@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { useLoaderData } from "react-router";
+import { toast, ToastContainer } from "react-toastify";
 import InstalledAppCard from "../components/installedAppCard";
 import { getStoreApps, removeFromStoreDB } from "../utils/utils";
 
@@ -17,12 +18,12 @@ const Installation = () => {
   const handleSort = (type) => {
     if (type === "Low-High") {
       const sortedLowToHigh = [...installedAppsToShow].sort(
-        (a, b) => a.size - b.size
+        (a, b) => a.downloads - b.downloads
       );
       setInstalledAppsToShow(sortedLowToHigh);
     } else if (type === "High-Low") {
       const sortedHighToLow = [...installedAppsToShow].sort(
-        (a, b) => b.size - a.size
+        (a, b) => b.downloads - a.downloads
       );
       setInstalledAppsToShow(sortedHighToLow);
     }
@@ -33,6 +34,7 @@ const Installation = () => {
     setInstalledAppsToShow(
       installedAppsToShow.filter((apps) => parseInt(apps.id) !== parseInt(id))
     );
+    toast.success("The App uninstall successfully");
   };
 
   return (
@@ -50,7 +52,7 @@ const Installation = () => {
             ({installedAppsToShow.length})Apps Found
           </h1>
           <select
-            className="select select-neutral"
+            className="select select-neutral w-40 md:w-auto"
             defaultValue=""
             onChange={(e) => handleSort(e.target.value)}
           >
@@ -61,6 +63,7 @@ const Installation = () => {
             <option value="High-Low">High-Low</option>
           </select>
         </div>
+
         <div className="grid grid-cols-1 gap-4 pt-4">
           {installedAppsToShow?.map((app) => (
             <InstalledAppCard
@@ -71,6 +74,7 @@ const Installation = () => {
           ))}
         </div>
       </div>
+      <ToastContainer></ToastContainer>
     </div>
   );
 };

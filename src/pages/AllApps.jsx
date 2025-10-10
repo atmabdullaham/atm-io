@@ -1,10 +1,12 @@
 import { useState } from "react";
 import { useLoaderData } from "react-router";
 import appsNotFound from "../assets/App-Error.png";
+import logo from "../assets/logo.png";
 import AppCard from "../components/AppCard";
 
 const AllApps = () => {
   const [search, setSearch] = useState("");
+  const [loading, setLoading] = useState(false);
   const data = useLoaderData();
   console.log(search);
   const searchLowerCaseAndTrimed = search.trim().toLowerCase();
@@ -28,7 +30,7 @@ const AllApps = () => {
           <h1 className="text-xl font-semibold">
             ({searchedApps.length})Apps Found
           </h1>
-          <label className="input">
+          <label className="input w-40 md:w-auto">
             <svg
               className="h-[1em] opacity-50"
               xmlns="http://www.w3.org/2000/svg"
@@ -47,19 +49,30 @@ const AllApps = () => {
             </svg>
             <input
               value={search}
-              onChange={(e) => setSearch(e.target.value)}
+              onChange={(e) => {
+                setLoading(true);
+                setSearch(e.target.value);
+                setTimeout(() => setLoading(false), 400);
+              }}
               type="search"
               required
               placeholder="Search"
             />
           </label>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-4 gap-y-4  pt-4">
-          {searchedApps.map((app) => (
-            <AppCard key={app.id} app={app}></AppCard>
-          ))}
-        </div>
-        {searchedApps.length === 0 && (
+        {loading ? (
+          <div className="flex justify-center items-center py-10">
+            {/* <span className="loading loading-spinner loading-lg text-primary"></span> */}
+            <img src={logo} alt="" className="w-16 h-16 animate-spin" />
+          </div>
+        ) : (
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-4 gap-y-4 pt-4">
+            {searchedApps.map((app) => (
+              <AppCard key={app.id} app={app}></AppCard>
+            ))}
+          </div>
+        )}
+        {searchedApps.length === 0 && loading === false && (
           <div className="flex justify-center items-center">
             <img src={appsNotFound} alt="" />
           </div>

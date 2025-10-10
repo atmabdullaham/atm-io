@@ -44,7 +44,7 @@
     const newApps = previousApp.filter(item => parseInt(item) !== parseInt(id));
     const strData = JSON.stringify(newApps);
     localStorage.setItem("installed", strData)
-    console.log(strData);
+    
 
   }
   export { addToStoreDB, downloadsConverter, getStoreApps, removeFromStoreDB };

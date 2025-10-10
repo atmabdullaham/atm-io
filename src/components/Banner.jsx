@@ -1,5 +1,6 @@
 import { BiLogoPlayStore } from "react-icons/bi";
 import { FaAppStoreIos } from "react-icons/fa";
+import { Link } from "react-router";
 import hero from "../assets/hero.png";
 
 const Banner = () => {
@@ -17,14 +18,19 @@ const Banner = () => {
         </p>
       </div>
 
-      <div>
-        <button className="btn text-xl font-semibold">
-          <BiLogoPlayStore /> Google Play
-        </button>
-        <button className="btn text-xl font-semibold">
-          <FaAppStoreIos />
-          App Store
-        </button>
+      <div className="flex gap-3">
+        <Link to="https://play.google.com/store/games?hl=en">
+          <button className="btn text-xl font-semibold">
+            <BiLogoPlayStore /> Google Play
+          </button>
+        </Link>
+
+        <Link to="https://www.apple.com/app-store/">
+          <button className="btn text-xl font-semibold">
+            <FaAppStoreIos />
+            App Store
+          </button>
+        </Link>
       </div>
       <div>
         <img src={hero} alt="" className="w-8/12 mx-auto" />
